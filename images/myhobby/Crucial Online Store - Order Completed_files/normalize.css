@@ -1,0 +1,580 @@
+/*** Begin normalize ***/
+div.cnx-boxes div#brdialog-win *,
+div.cnx-boxes div#cnx-banner.cnx-banner *,
+div.cnx-boxes div#brdialog-win div.brdialog-body div#brDialog *,
+div.cnx-mobile-banner div.cnx-banner-wrapper * {
+    -moz-osx-font-smoothing: initial;
+    -webkit-font-smoothing: initial;
+    letter-spacing: 0;
+}
+
+/* POS modals (all devices) */
+.cnx-boxes div, .cnx-boxes span,
+.cnx-boxes h1, .cnx-boxes p,
+.cnx-boxes img, .cnx-boxes button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.cnx-boxes div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cnx-boxes .cnx-mask, .cnx-boxes .br-trap-div {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* POS desktop/tablet inline */
+.cnx-inline-box div, .cnx-inline-box span,
+.cnx-inline-box h1, .cnx-inline-box p,
+.cnx-inline-box img, .cnx-inline-box button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* POS mobile banner */
+.cnx-mobile-banner div, .cnx-mobile-banner span,
+.cnx-mobile-banner h1, .cnx-mobile-banner p,
+.cnx-mobile-banner img, .cnx-mobile-banner button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*** End normalize ***/
+
+/*** Begin POS desktop/tablet DHTML components ***/
+.cnx-boxes .brdialog-win {
+    z-index: 102000;
+    width: 528px;
+    position: absolute;
+}
+
+.brdialog-win .brdialog-head {
+    background-color: #FFF;
+    height: 30px;
+    cursor: default;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brdialog-win .brdialog-title {
+    white-space: nowrap;
+    width: 280px;
+    float: left;
+    height: 100%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #FFF;
+    line-height: 30px;
+    text-align:left;
+}
+
+.brdialog-win .brdialog-close {
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    font-size: 19px;
+    color: #8e8e8e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: bold;
+    width: auto;
+    /* ADA updates for switching from div to button.  Shouldnt affect div. */
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid white;
+    background: transparent;
+}
+
+.brdialog-win button.brdialog-close {
+    background: transparent;
+    border: 0 solid white;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    min-width: 0px;
+    max-width: none;
+}
+
+.brdialog-win .brdialog-close:hover,
+.brdialog-win button.brdialog-close:hover {
+    text-transform: none;
+    border: none;
+    color: #8e8e8e;
+}
+
+.brdialog-win .brdialog-body {
+    background-color:#FFF;
+    cursor: pointer;
+    height:445px;
+}
+
+.brdialog-win .brDialog {
+    background-color: #FFF;
+    position: relative;
+    text-align: left;
+    white-space: normal;
+    height: 100%;
+}
+
+.brdialog-win .brDialog-inner-box {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.brdialog-win .brDialog-images {
+    left: 13px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.continue-image {
+    z-index: -1;
+}
+
+.brdialog-win .br-survey-image {
+    bottom: 10px;
+    border: 0px none;
+    display: block;
+    position: absolute;
+}
+
+.brdialog-win .brmerchantLogo {
+    top: 2px;
+    left: 150px;
+    position: absolute;
+    border: 0px none;
+    display: inline;
+    width: auto;
+}
+
+.brdialog-win .br-merchant-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brdialog-win .merchant-words-div {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    border: 0px none;
+    display: block;
+}
+
+.brdialog-win .brshrink_fit {
+    width: 500px;
+    position: absolute;
+    top: 52px;
+    left: 2px;
+    text-align: center;
+    overflow: visible;
+    height: 30px;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.brdialog-win .brshrink_fit, .brdialog-win .brshrink_fit .brshrink_text,
+.brdialog-win .brshrink_fit h1, .brdialog-win .brshrink_fit span {
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: normal;
+    line-height: 24px;
+    color: #444;
+    text-transform: none;
+    letter-spacing: normal;
+    border: none;
+}
+
+.brdialog-win .brshrink-fit-2 {
+    width: 400px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    text-align: center;
+    max-width: none;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    color: #444;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 22px;
+}
+
+.brdialog-win .skip-click-zone {
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+/*** End POS desktop/tablet DHTML components ***/
+
+/*** Begin POS desktop/tablet inline components ***/
+.cnx-inline-box {
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    top: 0px;
+    left: 0px;
+}
+
+.cnx-inline-box .inlineBrDialog {
+    display: block;
+    text-decoration: none;
+}
+
+.cnx-inline-box .br-survey-image {
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    border: 0px none;
+    display: block;
+    position: absolute;
+}
+
+.cnx-inline-box .brmerchantLogo {
+    top: 2px;
+    left: 150px;
+    position: absolute;
+    border: 0px none;
+    display: inline;
+    width: auto;
+}
+
+.cnx-inline-box .br-merchant-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cnx-inline-box .brshrink_fit {
+    width: 500px;
+    position: absolute;
+    top: 52px;
+    left: 2px;
+    text-align: center;
+    overflow: visible;
+    height: 30px;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.cnx-inline-box .brshrink_fit, .cnx-inline-box .brshrink_fit .brshrink_text,
+.cnx-inline-box .brshrink_fit h1, .cnx-inline-box .brshrink_fit span {
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: normal;
+    line-height: 24px;
+    color: #444;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.cnx-inline-box .brshrink-fit-2 {
+    width: 400px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    text-align: center;
+    max-width: none;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    color: #444;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 22px;
+}
+/*** End POS desktop/tablet inline components ***/
+
+/*** Begin POS mobile modal components ***/
+.cnx-boxes .cnx-banner {
+    background-color: #fff;
+    position: fixed;
+    border: 1px solid #cacaca;
+}
+
+.cnx-banner .cnx-merlogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.cnx-banner .cnx-brand {
+    text-align:left;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#676767;
+    font-size:11px;
+    font-style:italic;
+    left:10px;
+    bottom:-8px;
+    height:25px;
+    width:180px;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.cnx-banner .cnx-content {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #474747;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 92%;
+}
+
+.cnx-banner .cnx-header {
+    margin: 15px;
+}
+
+.cnx-banner .cnx-header, .cnx-banner .cnx-header .brshrink_text,
+.cnx-banner .cnx-header h1, .cnx-banner .cnx-header span {
+    -moz-osx-font-smoothing: initial;
+    -webkit-font-smoothing: initial;
+    color: #474747;
+    font-size: 17px;
+    letter-spacing: normal;
+    line-height: 17px;
+    text-transform: none;
+}
+
+.cnx-banner .cnx-incentive {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 15px;
+    letter-spacing: normal;
+    text-transform: none;
+    -moz-osx-font-smoothing: initial;
+    -webkit-font-smoothing: initial;
+}
+
+.cnx-banner .cnx-btn {
+    position: absolute;
+    left: 43px;
+    font-size: 16px;
+    width: 150px;
+    height: 20px;
+    background-color: #1274c9;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    box-sizing: content-box;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.cnx-banner .cnx-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #474747;
+    text-align: right;
+    width: 100%;
+}
+
+.cnx-banner .cnx-clickoverlay,
+.cnx-banner button.cnx-clickoverlay {
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid white;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: none;
+    box-shadow: none;
+}
+
+.cnx-banner .cnx-closeoverlay,
+.cnx-banner button.cnx-closeoverlay {
+    height: 40px;
+    width: 40px;
+    float: right;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    text-align: right;
+    /* ADA updates for switching from div to button.  Shouldn't affect div. */
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid white;
+    background: transparent;
+    box-shadow: none;
+}
+/*** End POS mobile modal components ***/
+
+/*** Begin POS mobile banner components ***/
+.cnx-mobile-banner {
+    background-color: #FFF;
+    bottom: 0;
+    font-family: sans-serif;
+    height: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000000;
+}
+
+.cnx-mobile-banner .cnx-mask {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.cnx-mobile-banner .cnx-banner-header {
+    font-size: 15px;
+    color: #ECEFF3;
+    background-color: #0D1E54;
+    padding: 7px 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cnx-mobile-banner .cnx-banner-body {
+    color: #666;
+    background-color: #F4F4F4;
+    border-bottom: 1px solid #CCC;
+    line-height: 1.4;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.cnx-mobile-banner .cnx-banner-incentive {
+    font-family: inherit;
+    margin: 0 auto;
+    padding: 9px 0;
+    width: 90%;
+    text-align: center;
+}
+
+.cnx-mobile-banner .cnx-banner-buttons button {
+    align-items: flex-start;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: normal;
+    text-indent: initial;
+    text-rendering: initial;
+    text-shadow: none;
+    word-spacing: initial;
+}
+
+.cnx-mobile-banner .cnx-decline-button {
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    color: #2865a8;
+    padding: 9px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cnx-mobile-banner .cnx-accept-button {
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+    padding: 9px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    margin: 0;
+    color: #ECEFF3;
+    background-color: #2865A8
+}
+
+.cnx-mobile-banner .cnx-offer-button {
+    font-size: 15px;
+    width: 50%;
+    height: 100%;
+    background-color: #FFF;
+    color: #2865a8;
+    padding: 9px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    margin: 0;
+    float: left;
+}
+/*** Begin POS mobile banner components ***/
+
+/*** Begin focus styles ***/
+.cnx-boxes :focus, .brdialog :focus, .brDialog :focus, .brdialog-win :focus, /* Original from util.js */
+.cnx-boxes .brdialog :focus, .cnx-boxes .brDialog :focus, .cnx-boxes .brdialog-win :focus, /* Add POS modals */
+.cnx-inline-box .brdialog :focus, .cnx-inline-box .brDialog :focus, .cnx-inline-box .brdialog-win :focus /* Add POS desktop/tablet inline */ {
+    outline: 1px dashed;
+}
+
+.disable-focus-outline:focus, /* Original from util.js */
+.cnx-boxes .disable-focus-outline:focus, /* Add POS modals */
+.cnx-inline-box .disable-focus-outline:focus /* Add POS desktop/tablet inline */ {
+    outline: none;
+}
+/*** End focus styles ***/
+
+/*** Begin image styles ***/
+.brdialog img, .brdialog-win img, /* Original from util.js */
+.cnx-boxes .brdialog img, .cnx-boxes .brdialog-win img, /* Add POS modals */
+.cnx-inline-box .brdialog img, .cnx-inline-box .brdialog-win img /* Add POS desktop/tablet inline */ {
+    width: auto;
+    max-width: none;
+}
+
+.cnx-banner img, .cnx-merlogo img, /* Original from util.js */
+.cnx-boxes .cnx-banner img, .cnx-boxes .cnx-merlogo img, /* Add POS modals */
+.cnx-inline-box .cnx-banner img, .cnx-inline-box .cnx-merlogo img /* Add POS desktop/tablet inline */ {
+    width: auto
+}
+
+.cnx-closeoverlay .img-pos-mobile-close, /* Original from util.js */
+.cnx-boxes .cnx-closeoverlay .img-pos-mobile-close, /* Add POS modals */
+.cnx-inline-box .cnx-closeoverlay .img-pos-mobile-close /* Add POS desktop/tablet inline */ {
+    width: 60px
+}
+/*** End image styles ***/

@@ -1,0 +1,22 @@
+ body{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 100px auto;
+  grid-template-areas: 'hd hd'
+                        'aside section'
+                        'footer footer'
+
+}
+/* body{
+    display:grid;
+    grid-template-columns:  auto;
+    grid-template-rows: 20vw auto 10vw;
+    grid-template-areas:"hd hd"
+                        "aside section"
+                        "footer footer"    ;
+                        background: white;
+} */
+header{grid-area:hd; }
+aside{grid-area:aside; }
+section{grid-area:section }
+footer{grid-area:footer; }

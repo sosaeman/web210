@@ -1,0 +1,112 @@
+
+body{
+	background-color: black;
+}
+header div{
+font-family: 'Permanent Marker', cursive;
+position: relative;
+  z-index: 100;
+  top: 300px;
+  left: -5px;
+  font-size:3vw;
+}
+
+h1
+{
+	text-shadow:2px 5px black;
+	 color:white;
+}
+
+
+.header{
+	position: relative;
+  z-index: 100;
+  top: 275px;
+  left: -5px;
+  font-size:2vw;
+  background-color:rgba(255, 179, 128, 0.5);
+  color:black;
+}
+ .sub{
+
+
+font-family: 'Permanent Marker', cursive;
+position: relative;
+  z-index: 1000;
+  top: 200px;
+  left: 600px;
+  font-size:40px;
+}
+p{
+	font-family: 'areial';
+font-size:2vw;
+font-weight:bold;
+color:white;
+}
+header
+{
+height:90vh;
+	 background-image:url("../images/myhobby/superhero_header2.jpg");
+background-size: cover;
+background-repeat:no-repeat;
+background-clip:padding-box;
+background-position:center;
+margin-top:-50px;
+
+}
+
+.parx1
+{
+background-image:url("../images/myhobby/parax1_back.jpg");
+	 min-height: 350px;
+	background-attachment:fixed;
+	 background-position:center ;
+	background-repeat:no-repeat;
+	background-size: auto; 
+	background-color:black;
+	margin-top:-40px;
+}
+
+header,footer
+{
+	text-align:center;
+	
+}
+footer
+{
+	color:white;
+	background-color:black;
+	margin-top: 30px;
+}
+
+footer img{
+	width: 3%;
+	height: 3%;
+}
+
+a{color: white;
+
+}
+
+#grid
+{
+	display:grid;
+	grid-template-columns:33.33% 33.33% 33.33%;
+	background-color:black;
+	height:90vh;
+	margin-top:-40px;
+	
+}
+#gridp
+{
+	display:flex;
+	justify-content: space-evenly;
+	background-color:black;
+	height:20vw;
+	margin-top:30px;
+	
+}
+#gridp img{
+	width: 19vw;
+	height: 100%;
+}
